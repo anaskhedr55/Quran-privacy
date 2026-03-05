@@ -1,210 +1,154 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quran | قرآن - Privacy Policy</title>
-    <style>
-      :root {
-        --bg: #0b1020;
-        --surface: #11172a;
-        --surface-2: #161f36;
-        --text: #edf1ff;
-        --muted: #b3bfdc;
-        --accent: #6ea8fe;
-        --border: #283555;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quran | قرآن - Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Quran | قرآن" />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; line-height: 1.6; margin: 0; }
+    header { padding: 28px 16px; border-bottom: 1px solid rgba(127,127,127,.25); }
+    main { max-width: 960px; margin: 0 auto; padding: 24px 16px 60px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    .meta { opacity: .8; margin: 0; }
+    .lang { margin-top: 28px; padding-top: 18px; border-top: 1px solid rgba(127,127,127,.25); }
+    h2 { margin: 18px 0 10px; font-size: 22px; }
+    h3 { margin: 18px 0 8px; font-size: 18px; }
+    ul { margin-top: 8px; }
+    a { word-break: break-word; }
+    .rtl { direction: rtl; text-align: right; }
+    .box { padding: 14px 16px; border: 1px solid rgba(127,127,127,.25); border-radius: 12px; background: rgba(127,127,127,.07); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quran | قرآن – Privacy Policy</h1>
+    <p class="meta">Effective date: March 5, 2026</p>
+  </header>
 
-      * {
-        box-sizing: border-box;
-      }
+  <main>
+    <p class="box">
+      This policy explains how data is used in <strong>Quran | قرآن</strong> and how local downloads and device data are handled.
+    </p>
 
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background: radial-gradient(circle at top, #18264b 0%, var(--bg) 52%);
-        color: var(--text);
-        line-height: 1.65;
-      }
+    <section class="lang" aria-label="English version">
+      <h2>English</h2>
 
-      .wrap {
-        max-width: 980px;
-        margin: 0 auto;
-        padding: 24px 18px 56px;
-      }
+      <h3>1) Data Stored On Device</h3>
+      <p>The app stores certain information locally on the user's device in order to function properly. This may include:</p>
+      <ul>
+        <li>App settings (theme, language, font size, translation mode, audio quality, notifications).</li>
+        <li>Reading and listening progress.</li>
+        <li>Bookmarks and calendar statistics.</li>
+        <li>Favorites and download records.</li>
+        <li>Optional local account data used only for on-device sign-in.</li>
+      </ul>
+      <p>All of this data remains on the user's device and is not transmitted to the developer.</p>
 
-      .card {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 20px;
-        margin-bottom: 16px;
-      }
+      <h3>2) Personal Data Collection</h3>
+      <p>The app <strong>does not collect, store, or share personal data</strong> with the developer or with third parties.</p>
+      <p>No personal information such as name, email address, location, or contacts is collected by the application.</p>
 
-      h1,
-      h2,
-      h3 {
-        margin: 0 0 10px;
-      }
+      <h3>3) Tracking &amp; Analytics</h3>
+      <p>The app <strong>does not use tracking technologies</strong>, advertising identifiers, analytics services, or advertising SDKs.</p>
 
-      h1 {
-        font-size: 1.8rem;
-      }
+      <h3>4) Network &amp; Content Sources</h3>
+      <p>Recitations are loaded from external providers including:</p>
+      <ul>
+        <li>mp3quran.net and related servers.</li>
+      </ul>
+      <p>Official Mushaf pages and Quran resources are provided by:</p>
+      <ul>
+        <li>King Fahd Complex for the Printing of the Holy Quran.</li>
+      </ul>
+      <p>When online content is requested, these external providers may process technical data such as IP address under their own privacy policies.</p>
+      <p>Provider privacy reference: <a href="https://www.mp3quran.net/ar/privacy">https://www.mp3quran.net/ar/privacy</a></p>
+      <p>King Fahd Complex reference: <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a></p>
 
-      h2 {
-        font-size: 1.2rem;
-      }
+      <h3>5) Downloads Logic (Offline Audio)</h3>
+      <p>Downloads start only when the user taps:</p>
+      <ul>
+        <li>"Download Surah"</li>
+        <li>"Download All Surahs"</li>
+      </ul>
+      <p>Downloads store local metadata including reciter ID/name, surah number, status, timestamps, and local file reference (when available).</p>
+      <p>On native iOS and Android builds, completed audio files are saved inside <strong>app-private storage</strong> for offline playback.</p>
+      <p>Offline audio storage is limited to approximately <strong>200 MB</strong>. If this limit is reached, new downloads will fail until some files are removed.</p>
+      <p>On the web version, downloads are handled by the <strong>browser download manager</strong> instead of native app storage.</p>
+      <p>Deleting a download from the Downloads page removes the local record and attempts to delete the stored file on native builds.</p>
 
-      h3 {
-        font-size: 1.02rem;
-        color: var(--accent);
-      }
+      <h3>6) Data Retention &amp; Deletion</h3>
+      <p>Most data remains locally on the user's device until the user deletes it inside the app or the app is uninstalled. Users may remove local account data and download records from within the application.</p>
 
-      p,
-      li {
-        color: var(--muted);
-      }
+      <h3>7) Children</h3>
+      <p>The app is intended for general audiences and <strong>is not specifically directed to children under the age of 13</strong>.</p>
 
-      ul {
-        margin: 0;
-        padding-inline-start: 18px;
-      }
+      <h3>8) Copyright &amp; Source Notice</h3>
+      <p>Recitations and audio streams remain the property of their original rights holders.</p>
+      <p>According to the King Fahd Complex website policy, website content is protected except for services, computer files, or software tools explicitly made available for public use.</p>
+      <p>Source: <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a></p>
 
-      .small {
-        font-size: 0.9rem;
-      }
+      <h3>9) Policy Updates</h3>
+      <p>This privacy policy <strong>may be updated from time to time</strong>. Any changes will be reflected on this page.</p>
 
-      a {
-        color: #9ac2ff;
-      }
+      <h3>10) Contact</h3>
+      <p>If you have any questions regarding this privacy policy, you may contact: <a href="mailto:a.m.khder.91@gmail.com">a.m.khder.91@gmail.com</a></p>
+    </section>
 
-      .divider {
-        height: 1px;
-        background: var(--border);
-        margin: 18px 0;
-      }
+    <section class="lang rtl" aria-label="Arabic version">
+      <h2>العربية</h2>
+      <p><strong>تاريخ السريان:</strong> 5 مارس 2026</p>
+      <p class="box">توضح هذه السياسة كيفية استخدام البيانات داخل تطبيق <strong>Quran | قرآن</strong> وكيفية التعامل مع البيانات المحلية والتنزيلات.</p>
 
-      .lang-ar {
-        direction: rtl;
-        text-align: right;
-      }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <section class="card">
-        <h1>Quran | قرآن - Privacy Policy</h1>
-        <p class="small">Effective date: March 5, 2026</p>
-        <p>
-          This policy explains data usage in Quran | قرآن, including local downloads behavior.
-        </p>
-      </section>
+      <h3>1) البيانات المحفوظة على الجهاز</h3>
+      <p>يقوم التطبيق بحفظ بعض المعلومات محليًا على جهاز المستخدم لتشغيل التطبيق بشكل صحيح، وتشمل:</p>
+      <ul>
+        <li>إعدادات التطبيق (الوضع، اللغة، الخط، الترجمة، جودة الصوت، الإشعارات).</li>
+        <li>تقدم القراءة/الاستماع.</li>
+        <li>العلامات المرجعية وإحصاءات التقويم.</li>
+        <li>المفضلة وسجلات التنزيل.</li>
+        <li>بيانات حساب محلي اختيارية لتسجيل الدخول على نفس الجهاز.</li>
+      </ul>
+      <p>جميع هذه البيانات تبقى محفوظة على جهاز المستخدم فقط ولا يتم إرسالها إلى المطور.</p>
 
-      <section class="card">
-        <h2>English</h2>
+      <h3>2) جمع البيانات الشخصية</h3>
+      <p>التطبيق <strong>لا يجمع أو يخزن أو يشارك أي بيانات شخصية</strong> مع المطور أو أي طرف ثالث.</p>
+      <p>لا يتم جمع أي معلومات شخصية مثل الاسم أو البريد الإلكتروني أو الموقع أو جهات الاتصال.</p>
 
-        <h3>1) Data Stored On Device</h3>
-        <ul>
-          <li>Settings (theme, language, font, translation mode, audio quality, notifications).</li>
-          <li>Reading/listening progress, bookmarks, and calendar stats.</li>
-          <li>Favorites and download records.</li>
-          <li>Optional local account data for on-device sign-in.</li>
-        </ul>
+      <h3>3) التتبع وتحليل البيانات</h3>
+      <p>التطبيق <strong>لا يستخدم تقنيات التتبع أو معرفات الإعلانات أو خدمات تحليل البيانات أو مكتبات إعلانية</strong>.</p>
 
-        <h3>2) Network & Content Sources</h3>
-        <ul>
-          <li>Recitations are loaded from mp3quran.net and related servers.</li>
-          <li>Official Mushaf pages/data and developer resources are from King Fahd Complex:
-            <a href="https://qurancomplex.gov.sa/quran-hafs/#flipbook-df_11301/1/">Mushaf pages</a>,
-            <a href="https://qurancomplex.gov.sa/quran-dev/">Quran Dev Platform</a>.
-          </li>
-          <li>When online content is requested, providers may process technical data such as IP under their own policies.</li>
-        </ul>
+      <h3>4) الشبكة ومصادر المحتوى</h3>
+      <p>يتم تحميل التلاوات من مزودين خارجيين مثل mp3quran.net وخوادم مرتبطة. كما يتم استخدام صفحات المصحف الرسمية وبيانات المطورين من مجمع الملك فهد.</p>
+      <p>عند طلب المحتوى عبر الإنترنت قد تتم معالجة بيانات تقنية مثل عنوان IP وفق سياسات الخصوصية الخاصة بالمزودين.</p>
+      <p>مرجع سياسة المزوّد: <a href="https://www.mp3quran.net/ar/privacy">https://www.mp3quran.net/ar/privacy</a></p>
+      <p>مرجع مجمع الملك فهد: <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a></p>
 
-        <h3>3) Downloads Logic (Offline Audio)</h3>
-        <ul>
-          <li>Downloads start only when user taps "Download surah" or "Download all surahs" in reciter page.</li>
-          <li>App stores local metadata: reciter ID/name, surah number, status, timestamps, and local file reference (if available).</li>
-          <li>On native iOS/Android builds, completed files are saved in app-private storage for offline playback.</li>
-          <li>Offline audio storage is limited to about 200 MB. If reached, new downloads fail until some files are removed.</li>
-          <li>On web, browser download manager handles file saving instead of native app-private storage.</li>
-          <li>Deleting a download from Downloads page removes the local record and attempts local file deletion on native builds.</li>
-        </ul>
+      <h3>5) منطق التنزيلات (الصوت بدون إنترنت)</h3>
+      <p>يبدأ التنزيل فقط عند ضغط المستخدم على "تنزيل السورة" أو "تنزيل جميع السور".</p>
+      <p>يحفظ التطبيق بيانات محلية للتنزيل مثل معرف/اسم القارئ، رقم السورة، الحالة، الوقت، ومرجع الملف المحلي عند توفره.</p>
+      <p>في نسخ iOS/Android الأصلية تُحفظ الملفات داخل تخزين التطبيق الخاص للتشغيل بدون إنترنت.</p>
+      <p>حد تخزين الصوت المحلي يقارب <strong>200 ميجابايت</strong>. عند بلوغه يفشل أي تنزيل جديد حتى حذف بعض الملفات.</p>
+      <p>في نسخة الويب، حفظ الملف يتم عبر مدير تنزيلات المتصفح.</p>
+      <p>عند حذف تنزيل من صفحة التنزيلات، يُزال السجل المحلي وتتم محاولة حذف الملف المحلي في النسخ الأصلية.</p>
 
-        <h3>4) Retention, Deletion & Contact</h3>
-        <ul>
-          <li>Most data remains locally until user deletes it or uninstalls the app.</li>
-          <li>User can delete local account data and local records from inside app.</li>
-          <li>Contact: <a href="mailto:a.m.khder.91@gmail.com">a.m.khder.91@gmail.com</a></li>
-        </ul>
+      <h3>6) الاحتفاظ والحذف</h3>
+      <p>معظم البيانات تبقى محليًا حتى حذفها من داخل التطبيق أو إزالة التطبيق. يمكن حذف الحساب المحلي والسجلات من داخل التطبيق.</p>
 
-        <h3>5) Copyright & Source Notice</h3>
-        <ul>
-          <li>Recitations/streams remain property of their original rights holders.</li>
-          <li>
-            King Fahd Complex states website content is protected except services/computer files/software tools explicitly made available for public use.
-            Source:
-            <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a>
-          </li>
-          <li>Provider privacy reference: <a href="https://www.mp3quran.net/ar/privacy">https://www.mp3quran.net/ar/privacy</a></li>
-        </ul>
-      </section>
+      <h3>7) الأطفال</h3>
+      <p>التطبيق موجه للجمهور العام <strong>وليس موجهاً خصيصاً للأطفال دون سن 13 عاماً</strong>.</p>
 
-      <div class="divider"></div>
+      <h3>8) إشعار الحقوق والمصدر</h3>
+      <p>حقوق التلاوات والبث محفوظة لأصحاب الحقوق الأصليين. محتوى مواقع مجمع الملك فهد محمي باستثناء ما يصرح بإتاحته للاستخدام العام.</p>
+      <p>المصدر: <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a></p>
 
-      <section class="card lang-ar">
-        <h2>العربية</h2>
-        <p class="small">تاريخ السريان: 5 مارس 2026</p>
+      <h3>9) تحديثات السياسة</h3>
+      <p>قد يتم تحديث سياسة الخصوصية من وقت لآخر، وسيتم نشر أي تحديثات على هذه الصفحة.</p>
 
-        <h3>1) البيانات المحفوظة على الجهاز</h3>
-        <ul>
-          <li>إعدادات التطبيق (الوضع، اللغة، الخط، الترجمة، جودة الصوت، الإشعارات).</li>
-          <li>تقدم القراءة/الاستماع، العلامات المرجعية، وإحصاءات التقويم.</li>
-          <li>المفضلة وسجلات التنزيل.</li>
-          <li>بيانات حساب محلي اختيارية لتسجيل الدخول على نفس الجهاز.</li>
-        </ul>
-
-        <h3>2) الشبكة ومصادر المحتوى</h3>
-        <ul>
-          <li>التلاوات تُحمّل من mp3quran.net وخوادم مرتبطة.</li>
-          <li>صفحات المصحف الرسمية وبيانات المطورين من مجمع الملك فهد:
-            <a href="https://qurancomplex.gov.sa/quran-hafs/#flipbook-df_11301/1/">صفحات المصحف</a>،
-            <a href="https://qurancomplex.gov.sa/quran-dev/">منصة المطورين</a>.
-          </li>
-          <li>عند طلب المحتوى الأونلاين قد تتم معالجة بيانات تقنية مثل IP وفق سياسات المزوّد.</li>
-        </ul>
-
-        <h3>3) منطق التنزيلات (الصوت بدون إنترنت)</h3>
-        <ul>
-          <li>التنزيل يبدأ فقط عند الضغط على "تنزيل السورة" أو "تنزيل جميع السور" من صفحة القارئ.</li>
-          <li>يحفظ التطبيق بيانات محلية للتنزيل: معرف/اسم القارئ، رقم السورة، الحالة، الوقت، ومرجع الملف المحلي عند توفره.</li>
-          <li>في نسخ iOS/Android الأصلية تُحفظ الملفات داخل تخزين التطبيق الخاص للتشغيل بدون إنترنت.</li>
-          <li>حد تخزين الصوت المحلي يقارب 200 ميجا. عند بلوغه يفشل أي تنزيل جديد حتى حذف بعض الملفات.</li>
-          <li>في نسخة الويب، حفظ الملف يتم عبر مدير تنزيلات المتصفح وليس تخزين التطبيق الأصلي.</li>
-          <li>عند حذف تنزيل من صفحة التنزيلات، يُزال السجل المحلي وتتم محاولة حذف الملف المحلي في النسخ الأصلية.</li>
-        </ul>
-
-        <h3>4) الاحتفاظ والحذف والتواصل</h3>
-        <ul>
-          <li>معظم البيانات تبقى محليًا حتى حذفها أو إزالة التطبيق.</li>
-          <li>يمكن حذف الحساب المحلي والبيانات المحلية من داخل التطبيق.</li>
-          <li>للتواصل: <a href="mailto:a.m.khder.91@gmail.com">a.m.khder.91@gmail.com</a></li>
-        </ul>
-
-        <h3>5) إشعار الحقوق والمصدر</h3>
-        <ul>
-          <li>حقوق التلاوات والبث محفوظة لأصحاب الحقوق الأصليين.</li>
-          <li>
-            إن جميع محتويات مواقع مجمع الملك فهد لطباعة المصحف الشريف محمية، باستثناء الخدمات/الملفات الحاسوبية/الأدوات البرمجية التي يصرح المجمع بإتاحتها للاستخدام العام.
-            المصدر:
-            <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a>
-          </li>
-          <li>مرجع سياسة المزوّد: <a href="https://www.mp3quran.net/ar/privacy">https://www.mp3quran.net/ar/privacy</a></li>
-        </ul>
-      </section>
-    </main>
-  </body>
+      <h3>10) التواصل</h3>
+      <p>للاستفسار: <a href="mailto:a.m.khder.91@gmail.com">a.m.khder.91@gmail.com</a></p>
+    </section>
+  </main>
+</body>
 </html>
-```
