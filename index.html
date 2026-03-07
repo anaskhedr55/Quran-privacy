@@ -1,141 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran | قرآن - Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --surface: #11172a;
+        --surface-2: #161f36;
+        --text: #edf1ff;
+        --muted: #b3bfdc;
+        --accent: #6ea8fe;
+        --border: #2a3b64;
+      }
 
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quran | قرآن - Privacy Policy</title>
-  <style>
-    :root{
-      --bg1:#0f172a;
-      --bg2:#1e3a8a;
-      --card:#0b1229cc;
-      --stroke:#60a5fa66;
-      --text:#e5efff;
-      --muted:#b7c8ea;
-      --accent:#93c5fd;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 700px at 10% 0%, #1d4ed8 0%, transparent 45%),
-        radial-gradient(900px 500px at 100% 100%, #2563eb 0%, transparent 45%),
-        linear-gradient(160deg,var(--bg1),var(--bg2));
-      min-height:100vh;
-    }
-    .wrap{max-width:980px;margin:0 auto;padding:24px}
-    .card{
-      background:var(--card);
-      border:1px solid var(--stroke);
-      border-radius:18px;
-      padding:20px;
-      backdrop-filter: blur(10px);
-      box-shadow:0 20px 60px #00000055;
-    }
-    h1{margin:0 0 6px;font-size:28px}
-    .sub{margin:0 0 16px;color:var(--muted);font-size:14px}
-    h2{margin:18px 0 8px;color:var(--accent);font-size:18px}
-    p,li{line-height:1.8;color:var(--text);font-size:15px}
-    ul{margin:8px 0 0;padding-inline-start:18px}
-    .en{direction:ltr;text-align:left;margin-top:24px;padding-top:20px;border-top:1px dashed var(--stroke)}
-    a{color:#bfdbfe;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .badge{
-      display:inline-block;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid var(--stroke);
-      color:var(--accent);
-      font-size:12px;
-      margin-bottom:10px;
-    }
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <section class="card">
-      <span class="badge">Quran | قرآن</span>
-      <h1>سياسة الخصوصية</h1>
-      <p class="sub"><strong>تاريخ السريان:</strong> 5 مارس 2026</p>
+      * {
+        box-sizing: border-box;
+      }
 
-      <h2>1) البيانات المحفوظة على الجهاز</h2>
-      <ul>
-        <li>يحفظ التطبيق محليًا إعدادات التطبيق، تقدم القراءة/الاستماع، العلامات، المفضلة، سجلات التنزيل، وبيانات حساب محلي اختيارية.</li>
-        <li>هذه البيانات تبقى على جهاز المستخدم ولا تُرسل إلى المطور.</li>
-      </ul>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(circle at top, #18264b 0%, var(--bg) 52%);
+        color: var(--text);
+        line-height: 1.65;
+      }
 
-      <h2>2) جمع البيانات الشخصية</h2>
-      <ul>
-        <li>التطبيق لا يجمع أو يخزن أو يشارك بيانات شخصية (مثل الاسم/الإيميل/جهات الاتصال) مع المطور أو أطراف ثالثة.</li>
-        <li>عند تفعيل إذن الموقع، تُستخدم الإحداثيات لحساب القبلة ومواقيت الصلاة، وقد تُرسل مباشرةً لمزوّد مواقيت الصلاة لإرجاع توقيت أدق. المطور لا يخزن بيانات الموقع.</li>
-      </ul>
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 24px 18px 56px;
+      }
 
-      <h2>3) التتبع والتحليلات</h2>
-      <ul>
-        <li>لا يستخدم التطبيق تتبعًا إعلانيًا، ولا معرفات إعلانية، ولا SDKs إعلانية.</li>
-      </ul>
+      .card {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 16px;
+      }
 
-      <h2>4) الشبكة ومصادر المحتوى</h2>
-      <ul>
-        <li>التلاوات من مزودين خارجيين مثل mp3quran.net.</li>
-        <li>صفحات المصحف وموارد القرآن من مجمع الملك فهد لطباعة المصحف الشريف.</li>
-        <li>قد يعالج المزودون بيانات تقنية مثل عنوان IP وفق سياساتهم.</li>
-        <li>مرجع المزود: <a href="https://www.mp3quran.net/ar/privacy" target="_blank" rel="noreferrer">mp3quran.net/ar/privacy</a></li>
-        <li>مرجع مجمع الملك فهد: <a href="https://qurancomplex.gov.sa/privacypolicy/" target="_blank" rel="noreferrer">qurancomplex.gov.sa/privacypolicy</a></li>
-      </ul>
+      h1,
+      h2,
+      h3 {
+        margin: 0 0 10px;
+      }
 
-      <h2>5) منطق التنزيلات (الصوت بدون إنترنت)</h2>
-      <ul>
-        <li>يبدأ التنزيل فقط عند ضغط المستخدم على "تنزيل السورة" أو "تنزيل جميع السور".</li>
-        <li>يحفظ التطبيق محليًا بيانات التنزيل (القارئ/السورة/الحالة/الوقت/مرجع الملف المحلي).</li>
-        <li>في iOS/Android يتم التخزين داخل مساحة التطبيق الخاصة.</li>
-        <li>لا يوجد حد ثابت داخل التطبيق لحجم تنزيلات الصوت؛ يعتمد على مساحة الجهاز الحرة وسياسات النظام.</li>
-        <li>في الويب يتم التنزيل عبر مدير تنزيلات المتصفح.</li>
-      </ul>
+      h1 {
+        font-size: 1.8rem;
+      }
 
-      <h2>6) الاحتفاظ والحذف</h2>
-      <ul>
-        <li>تبقى أغلب البيانات محليًا حتى يحذفها المستخدم من التطبيق أو يزيل التطبيق من الجهاز.</li>
-      </ul>
+      h2 {
+        font-size: 1.2rem;
+      }
 
-      <h2>7) الأطفال</h2>
-      <ul>
-        <li>التطبيق موجه للجمهور العام وغير مخصص خصيصًا للأطفال دون 13 سنة.</li>
-      </ul>
+      h3 {
+        font-size: 1.02rem;
+        color: var(--accent);
+      }
 
-      <h2>8) الحقوق والمصدر</h2>
-      <ul>
-        <li>حقوق التلاوات والبث محفوظة لأصحاب الحقوق الأصليين.</li>
-        <li>محتوى مجمع الملك فهد محمي باستثناء ما يتيحه المجمع للاستخدام العام للمطورين.</li>
-        <li>المصدر: <a href="https://qurancomplex.gov.sa/privacypolicy/" target="_blank" rel="noreferrer">qurancomplex.gov.sa/privacypolicy</a></li>
-      </ul>
+      p,
+      li {
+        color: var(--muted);
+      }
 
-      <h2>9) تحديثات السياسة</h2>
-      <ul>
-        <li>قد يتم تحديث هذه السياسة من وقت لآخر، وسيتم نشر أي تعديل في هذه الصفحة.</li>
-      </ul>
+      ul {
+        margin: 0;
+        padding-inline-start: 18px;
+      }
 
-      <h2>10) التواصل</h2>
-      <ul>
-        <li><a href="mailto:a.m.khder.91@gmail.com">a.m.khder.91@gmail.com</a></li>
-      </ul>
+      .small {
+        font-size: 0.9rem;
+      }
 
-      <section class="en">
-        <h1>Privacy Policy</h1>
-        <p class="sub"><strong>Effective date:</strong> March 5, 2026</p>
-        <p>This app stores settings and progress locally on device. No personal data is collected by the developer. If location permission is enabled, coordinates may be used for Qibla/prayer-time calculation and sent directly to prayer-time providers for accurate timings; the developer does not store location data.</p>
-        <p>Content sources include mp3quran.net and the King Fahd Complex resources. Providers may process technical data (such as IP) under their own policies.</p>
-        <p>Offline audio downloads are user-initiated and saved in app-private storage on native apps. There is no fixed in-app cap for offline audio downloads; limits depend on available device storage and OS behavior.</p>
-        <p>Policy references: 
-          <a href="https://www.mp3quran.net/ar/privacy" target="_blank" rel="noreferrer">mp3quran.net/ar/privacy</a> •
-          <a href="https://qurancomplex.gov.sa/privacypolicy/" target="_blank" rel="noreferrer">qurancomplex.gov.sa/privacypolicy</a>
-        </p>
-        <p>Contact: <a href="mailto:a.m.khder.91@gmail.com">a.m.khder.91@gmail.com</a></p>
+      a {
+        color: #9ac2ff;
+      }
+
+      .divider {
+        height: 1px;
+        background: var(--border);
+        margin: 18px 0;
+      }
+
+      .lang-ar {
+        direction: rtl;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <h1>Quran | قرآن - Privacy Policy</h1>
+        <p class="small"><strong>Effective date:</strong> March 5, 2026</p>
       </section>
-    </section>
-  </main>
-</body>
+
+      <section class="card">
+        <h2>English</h2>
+
+        <h3>1) Data Stored On Device</h3>
+        <ul>
+          <li>The app stores local settings, reading/listening progress, bookmarks, favorites, download records, and optional local account data for on-device sign-in.</li>
+          <li>All of this data remains on the user's device and is not transmitted to the developer.</li>
+        </ul>
+
+        <h3>2) Personal Data Collection</h3>
+        <ul>
+          <li>The app does not collect, store, or share personal data with the developer or with third parties.</li>
+          <li>No personal information such as name, email address, or contacts is collected by the application.</li>
+          <li>If you enable location permission, your location coordinates are used to calculate Qibla and prayer times, and may be sent directly to prayer-time providers to return accurate timings. This location data is not stored by the developer.</li>
+          <li>For the iOS prayer widget, location is also used to resolve and display the current city name with next-prayer timing.</li>
+          <li>The widget may cache the last successful city name, coordinates, and timezone locally on device so it can continue working when location is temporarily unavailable.</li>
+        </ul>
+
+        <h3>3) Tracking &amp; Analytics</h3>
+        <ul>
+          <li>The app does not use tracking technologies, advertising identifiers, analytics services, or advertising SDKs.</li>
+        </ul>
+
+        <h3>4) Network &amp; Content Sources</h3>
+        <ul>
+          <li>Recitations are loaded from external providers including mp3quran.net and related servers.</li>
+          <li>Official Mushaf pages and Quran resources are provided by King Fahd Complex for the Printing of the Holy Quran.</li>
+          <li>Prayer-time data is fetched from provider APIs that may receive coordinates when location-based timings are enabled.</li>
+          <li>For widget city-name resolution, reverse geocoding may use Apple Location Services and OpenStreetMap Nominatim, which may receive coordinates and technical request data under their own policies.</li>
+          <li>When online content is requested, these providers may process technical data such as IP address under their own privacy policies.</li>
+          <li>Provider privacy reference: <a href="https://www.mp3quran.net/ar/privacy">https://www.mp3quran.net/ar/privacy</a></li>
+          <li>OpenStreetMap privacy reference: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></li>
+          <li>King Fahd Complex reference: <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a></li>
+        </ul>
+
+        <h3>5) Downloads Logic (Offline Audio)</h3>
+        <ul>
+          <li>Downloads start only when the user taps "Download Surah" or "Download All Surahs".</li>
+          <li>Local metadata may include reciter ID/name, surah number, download status, timestamps, and local file reference.</li>
+          <li>On native iOS/Android builds, completed audio files are saved inside app-private storage for offline playback.</li>
+          <li>On native builds, offline audio downloads are not limited by a fixed in-app storage cap. Storage availability depends on device free space and OS behavior.</li>
+          <li>On web builds, downloads are handled by the browser download manager.</li>
+          <li>Deleting a download removes the local record and attempts to delete the local file on native builds.</li>
+        </ul>
+
+        <h3>6) Data Retention &amp; Deletion</h3>
+        <ul>
+          <li>Most data remains locally on the user's device until the user deletes it inside the app or uninstalls the app.</li>
+          <li>Users may remove local account data and download records from within the application.</li>
+        </ul>
+
+        <h3>7) Children</h3>
+        <ul>
+          <li>The app is intended for general audiences and is not specifically directed to children under the age of 13.</li>
+        </ul>
+
+        <h3>8) Copyright &amp; Source Notice</h3>
+        <ul>
+          <li>Recitations and audio streams remain the property of their original rights holders.</li>
+          <li>According to King Fahd Complex policy, website content is protected except services, computer files, or software tools explicitly made available for public use.</li>
+          <li>Source: <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a></li>
+        </ul>
+
+        <h3>9) Policy Updates</h3>
+        <ul>
+          <li>This privacy policy may be updated from time to time. Any changes will be reflected on this page.</li>
+        </ul>
+
+        <h3>10) Contact</h3>
+        <ul>
+          <li>For any questions regarding this privacy policy, contact: <a href="mailto:a.m.khder.91@gmail.com">a.m.khder.91@gmail.com</a></li>
+        </ul>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="card lang-ar">
+        <h2>العربية</h2>
+        <p class="small"><strong>تاريخ السريان:</strong> 5 مارس 2026</p>
+
+        <h3>1) البيانات المحفوظة على الجهاز</h3>
+        <ul>
+          <li>يقوم التطبيق بحفظ إعدادات التطبيق وتقدم القراءة والاستماع والعلامات المرجعية والمفضلة وسجلات التنزيل وبيانات حساب محلي اختيارية لتسجيل الدخول على نفس الجهاز.</li>
+          <li>جميع هذه البيانات تبقى محفوظة على جهاز المستخدم فقط ولا يتم إرسالها إلى المطور.</li>
+        </ul>
+
+        <h3>2) جمع البيانات الشخصية</h3>
+        <ul>
+          <li>التطبيق لا يجمع أو يخزن أو يشارك أي بيانات شخصية مع المطور أو أي طرف ثالث.</li>
+          <li>لا يتم جمع أي معلومات شخصية مثل الاسم أو البريد الإلكتروني أو جهات الاتصال.</li>
+          <li>عند تفعيل إذن الموقع، يتم استخدام الإحداثيات لحساب اتجاه القبلة ومواقيت الصلاة، وقد تُرسل مباشرةً إلى مزود مواقيت الصلاة لإرجاع توقيت دقيق. المطور لا يقوم بتخزين بيانات الموقع.</li>
+          <li>بالنسبة لويدجت مواقيت الصلاة في iOS، يُستخدم الموقع أيضًا لتحديد اسم المدينة الحالي وعرضه مع توقيت الصلاة القادمة.</li>
+          <li>قد يحتفظ الويدجت محليًا على الجهاز بآخر مدينة ناجحة مع الإحداثيات والمنطقة الزمنية ليستمر العمل عند تعذر الموقع مؤقتًا.</li>
+        </ul>
+
+        <h3>3) التتبع وتحليل البيانات</h3>
+        <ul>
+          <li>التطبيق لا يستخدم تقنيات التتبع أو معرفات الإعلانات أو خدمات تحليل البيانات أو مكتبات إعلانية.</li>
+        </ul>
+
+        <h3>4) الشبكة ومصادر المحتوى</h3>
+        <ul>
+          <li>يتم تحميل التلاوات من مزودين خارجيين مثل mp3quran.net وخوادم مرتبطة.</li>
+          <li>يتم استخدام صفحات المصحف الرسمية وموارد القرآن من مجمع الملك فهد لطباعة المصحف الشريف.</li>
+          <li>يتم جلب مواقيت الصلاة من مزودي API وقد يستقبل المزود الإحداثيات عند تفعيل التوقيت حسب الموقع.</li>
+          <li>لتحديد اسم المدينة داخل الويدجت قد يتم استخدام خدمات عكس الإحداثيات من Apple Location Services وOpenStreetMap Nominatim، وقد تستقبل هذه الخدمات الإحداثيات وبيانات تقنية للطلب وفق سياساتها.</li>
+          <li>عند طلب المحتوى عبر الإنترنت قد تتم معالجة بيانات تقنية مثل عنوان IP وفق سياسات الخصوصية الخاصة بالمزودين.</li>
+          <li>مرجع سياسة المزوّد: <a href="https://www.mp3quran.net/ar/privacy">https://www.mp3quran.net/ar/privacy</a></li>
+          <li>مرجع OpenStreetMap: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></li>
+          <li>مرجع مجمع الملك فهد: <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a></li>
+        </ul>
+
+        <h3>5) منطق التنزيلات (الصوت بدون إنترنت)</h3>
+        <ul>
+          <li>يبدأ التنزيل فقط عند ضغط المستخدم على "تنزيل السورة" أو "تنزيل جميع السور".</li>
+          <li>يحفظ التطبيق بيانات محلية للتنزيل تشمل معرف أو اسم القارئ، رقم السورة، حالة التنزيل، وقت التنزيل، ومرجع الملف المحلي عند توفره.</li>
+          <li>في تطبيقات iOS وAndroid الأصلية يتم حفظ الملفات داخل تخزين التطبيق الخاص لتشغيلها بدون إنترنت.</li>
+          <li>في النسخ الأصلية لا يوجد حد ثابت داخل التطبيق لحجم تنزيلات الصوت. التوفر يعتمد على المساحة الحرة في الجهاز وسياسات النظام.</li>
+          <li>في نسخة الويب يتم حفظ الملفات عبر مدير تنزيلات المتصفح وليس عبر تخزين التطبيق.</li>
+          <li>عند حذف تنزيل من صفحة التنزيلات يتم حذف السجل المحلي ومحاولة حذف الملف المحلي في النسخ الأصلية.</li>
+        </ul>
+
+        <h3>6) الاحتفاظ بالبيانات وحذفها</h3>
+        <ul>
+          <li>تبقى معظم البيانات محفوظة محليًا على الجهاز حتى يقوم المستخدم بحذفها من داخل التطبيق أو إزالة التطبيق من الجهاز.</li>
+          <li>يمكن للمستخدم حذف الحساب المحلي وسجلات التنزيل من داخل التطبيق.</li>
+        </ul>
+
+        <h3>7) الأطفال</h3>
+        <ul>
+          <li>التطبيق موجه للجمهور العام وليس موجهاً خصيصاً للأطفال دون سن 13 عاماً.</li>
+        </ul>
+
+        <h3>8) إشعار الحقوق والمصدر</h3>
+        <ul>
+          <li>حقوق التلاوات والبث محفوظة لأصحاب الحقوق الأصليين.</li>
+          <li>ينص موقع مجمع الملك فهد على أن جميع محتويات الموقع محمية باستثناء الخدمات أو الملفات أو الأدوات البرمجية التي يصرح المجمع بإتاحتها للاستخدام العام.</li>
+          <li>المصدر: <a href="https://qurancomplex.gov.sa/privacypolicy/">https://qurancomplex.gov.sa/privacypolicy/</a></li>
+        </ul>
+
+        <h3>9) تحديثات السياسة</h3>
+        <ul>
+          <li>قد يتم تحديث سياسة الخصوصية من وقت لآخر، وسيتم نشر أي تحديثات على هذه الصفحة.</li>
+        </ul>
+
+        <h3>10) التواصل</h3>
+        <ul>
+          <li>لأي استفسار بخصوص سياسة الخصوصية يمكن التواصل عبر: <a href="mailto:a.m.khder.91@gmail.com">a.m.khder.91@gmail.com</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
